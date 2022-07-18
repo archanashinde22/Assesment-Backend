@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <section class="button-container">
+      <button id="complimentButton">Get a compliment</button>
+      <button
+        id="fortuneButton"
+        style="
+          border-radius: 8px;
+          padding: 10px;
+          margin: 20px;
+          background-color: rgb(226, 156, 85);
+        "
+      >
+        Get a Today's Fortune!
+      </button>
+
+      <button id="inspireBtn">Get Inspirational Quotes</button>
+    </section>
+    <section id="display-section"></section>
+    <form>
+      <div class="goal">
+        <label for="inputGoal"> Enter the new Goal</label>
+        <input
+          id="inputGoal"
+          type="text"
+          style="padding: 10px; margin: 20px"
+          placeholder="Enter your Goal here"
+        />
+
+        <button id="addGoal">Add Goal</button>
+      </div>
+    </form>
+
+    <form>
+      <div class="goal">
+        <label for="deleteGoal"> Enter the Goal number to delete</label>
+        <input
+          id="deleteGoalNo"
+          type="number"
+          value="0"
+          style="padding: 10px; margin: 20px"
+          placeholder="Enter your Goal you want to delete"
+        />
+        <button id="deleteGoal">Delete Goal</button>
+      </div>
+    </form>
+
+    <form>
+      <div class="goal">
+        <label for="updateGoalNo"> Enter the Goal number to update</label>
+        <input
+          id="updateGoalNo"
+          type="number"
+          value="0"
+          style="padding: 10px; margin: 20px"
+          placeholder="Enter your Goal Number. to update"
+        />
+        <br />
+
+        <label for="updateGoalText"> Enter the new Goal to update</label>
+        <input
+          id="updateGoalText"
+          type="text"
+          style="padding: 10px; margin: 20px; width: fit-content"
+          placeholder="Enter your New Goal"
+        />
+
+        <button id="updateGoal">Update Goal</button>
+      </div>
+    </form>
+
+    <div id="goal-container"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
